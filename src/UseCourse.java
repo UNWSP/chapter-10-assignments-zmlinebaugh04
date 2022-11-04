@@ -1,14 +1,16 @@
+import java.util.Scanner;
 
-public class UseCourse extends LabCourse {
-
-	public UseCourse(String lab) {
-		super(lab);
-		// TODO Auto-generated constructor stub
-	}
+public class UseCourse {
+	static String courseInput;
+	int courseNumberInput, creditInput;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("Please enter course subject: ");
+		courseInput = userInput.next();
+		
+		LabCourse(courseInput);
+		
 	}
 
 }
